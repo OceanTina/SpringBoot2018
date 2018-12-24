@@ -1,30 +1,14 @@
 package com.huawei.huawei.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class User {
-    private int ID;
-    private String UserName;
+    private int id;
+    private String name;
+    private int age;
 
-    public int getID() {
-        return ID;
-    }
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public String getUserName() {
-        return UserName;
-    }
-
-    public void setUserName(String userName) {
-        UserName = userName;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "ID=" + ID +
-                ", UserName='" + UserName + '\'' +
-                '}';
-    }
 }

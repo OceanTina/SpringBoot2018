@@ -21,7 +21,7 @@ public class UserRepository implements UserRepositoryInf{
         boolean success = false;
         //ID从1开始
         Integer id = idGenerator.incrementAndGet();
-        user.setID(id);
+        user.setId(id);
 
         success =  map.put(id, user) == null;
 
